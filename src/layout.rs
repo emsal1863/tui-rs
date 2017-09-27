@@ -8,6 +8,13 @@ use cassowary::strength::{REQUIRED, WEAK};
 use terminal::Terminal;
 use backend::Backend;
 
+pub enum Corner {
+    TopLeft,
+    TopRight,
+    BottomRight,
+    BottomLeft,
+}
+
 #[derive(Debug, Hash, Clone, PartialEq, Eq)]
 pub enum Direction {
     Horizontal,
